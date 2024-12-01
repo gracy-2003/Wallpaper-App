@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".MainActivity">
+
+    <!-- Wrap everything with a NestedScrollView for better performance -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!-- Existing ConstraintLayout remains inside the NestedScrollView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Stylish Text in the Center at the Top -->
+            <TextView
+                android:id="@+id/headingTextView"
+                android:layout_width="232dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/agbalumo"
+                android:text="Wallpapers"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose From Gallery"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/headingTextView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/uploadButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 1" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image2"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 2" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 3" />
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image4"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 4" />
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image5"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 5" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image6"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 6" />
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image7"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 7" />
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image8"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 8" />
+
+                    <ImageView
+                        android:id="@+id/image9"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image9"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 9" />
+
+                    <ImageView
+                        android:id="@+id/image10"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image10"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 10" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image11"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image11"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 11" />
+
+                    <ImageView
+                        android:id="@+id/image12"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image12"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 12" />
+
+                    <ImageView
+                        android:id="@+id/image13"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image13"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 13" />
+
+                    <ImageView
+                        android:id="@+id/image14"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image14"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 14" />
+
+                    <ImageView
+                        android:id="@+id/image15"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image15"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 15" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image16"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image16"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 16" />
+
+                    <ImageView
+                        android:id="@+id/image17"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image17"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 17" />
+
+                    <ImageView
+                        android:id="@+id/image18"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image18"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 18" />
+
+                    <ImageView
+                        android:id="@+id/image19"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image19"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 19" />
+
+                    <ImageView
+                        android:id="@+id/image20"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image20"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 20" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Added HorizontalScrollView 5 -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image21"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image21"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 21" />
+
+                    <ImageView
+                        android:id="@+id/image22"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image22"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 22" />
+
+                    <ImageView
+                        android:id="@+id/image23"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image23"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 23" />
+
+                    <ImageView
+                        android:id="@+id/image24"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image24"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 24" />
+
+                    <ImageView
+                        android:id="@+id/image25"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image25"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 25" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image26"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image26"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 26" />
+
+                    <ImageView
+                        android:id="@+id/image27"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image27"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 27" />
+
+                    <ImageView
+                        android:id="@+id/image28"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image28"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 28" />
+
+                    <ImageView
+                        android:id="@+id/image29"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image29"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 29" />
+
+                    <ImageView
+                        android:id="@+id/image30"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image30"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 30" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image31"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image31"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 31" />
+
+                    <ImageView
+                        android:id="@+id/image32"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image32"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 32" />
+
+                    <ImageView
+                        android:id="@+id/image33"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image33"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 33" />
+
+                    <ImageView
+                        android:id="@+id/image34"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image34"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 34" />
+
+                    <ImageView
+                        android:id="@+id/image35"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image35"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 35" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image36"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image36"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 36" />
+
+                    <ImageView
+                        android:id="@+id/image37"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image37"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 37" />
+
+                    <ImageView
+                        android:id="@+id/image38"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image38"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 38" />
+
+                    <ImageView
+                        android:id="@+id/image39"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image39"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 39" />
+
+                    <ImageView
+                        android:id="@+id/image40"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image40"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 40" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image41"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image41"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 41" />
+
+                    <ImageView
+                        android:id="@+id/image42"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image42"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 42" />
+
+                    <ImageView
+                        android:id="@+id/image43"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image43"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 43" />
+
+                    <ImageView
+                        android:id="@+id/image44"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image44"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 44" />
+
+                    <ImageView
+                        android:id="@+id/image45"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image45"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 45" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image46"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image46"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 46" />
+
+                    <ImageView
+                        android:id="@+id/image47"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image47"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 47" />
+
+                    <ImageView
+                        android:id="@+id/image48"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image48"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 48" />
+
+                    <ImageView
+                        android:id="@+id/image49"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image49"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 49" />
+
+                    <ImageView
+                        android:id="@+id/image50"
+                        android:layout_width="135dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/image50"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Wallpaper Image 50" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

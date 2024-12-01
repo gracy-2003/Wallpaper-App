@@ -1,4 +1,3 @@
-# Wallpaper
 # Wallpaper App
 
 A feature-rich wallpaper application built using Android and Java. This app allows users to browse, search, and set wallpapers directly on their device.
